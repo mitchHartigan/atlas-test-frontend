@@ -15,14 +15,23 @@
       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
       crossorigin="anonymous"
     ></script>
+    <style>
+      .wrapper {
+        box-sizing: border-box;
+        padding: 30px 0px 0px 60px;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="ui-widget">
-      <label for="recipe">Acronym Lookup:</label><br />
-      <input id="recipe" />
-      <ul id="ingredients"></ul>
+    <div class="wrapper">
+      <div class="ui-widget">
+        <label for="recipe">Acronym Lookup:</label><br />
+        <input id="recipe" />
+        <ul id="ingredients"></ul>
+      </div>
     </div>
+
     <script>
       $(document).ready(function () {
         $("#recipe").autocomplete({
