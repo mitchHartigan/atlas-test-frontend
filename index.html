@@ -28,7 +28,7 @@
         $("#recipe").autocomplete({
           source: async function (req, res) {
             let data = await fetch(
-              `http://localhost:3000/search?term=${req.term}`
+              `https://g92t09z7f4.execute-api.us-east-1.amazonaws.com/search?term=${req.term}`
             )
               .then((results) => results.json())
               .then((results) =>
